@@ -1,0 +1,89 @@
+//variables
+$font: 'Mulish', sans-serif;
+$background: linear-gradient(270deg, #0093E9 0%, #80D0C7 100%); 
+$primari-color: #0093E9;
+$color-claro: white;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: 62.5%;
+}
+body{
+    background-color: $primari-color;
+    background-image: $background;
+    font-family: $font;
+}
+
+.header{
+    width: 100%;
+    height: 80px; 
+    background-color: $primari-color;
+    background-image: $background;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__image{
+        width: 200px; 
+        margin: 10px;
+    }
+    &__menu{
+        margin-right: 30px;
+        &-profile{
+            margin-right: 8px;
+            display: flex;
+            p{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $color-claro;
+            }
+        }
+        ul{
+            display: none;
+            list-style: none;
+            padding: 0px;
+            position: absolute;
+            width: 100px;
+            text-align: right;
+            margin: 0 0 0 -14px;
+            li{
+                margin: 10px 0;
+                a{
+                    color: $color-claro;
+                    text-decoration: none;
+                }
+                a:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    &__menu:hover ul, ul:hover{
+        display: block;
+    }
+    
+}
+.main{
+    height: 300px;
+    &__title{
+        color: $color-claro;
+        font-size: 25px;
+    }
+    &__input{
+        background-color: rgba($color: #fff, $alpha: 0.1);
+        border: 2px solid $color-claro;
+        border-radius: 25px;
+        font-family: $font;
+        font-size: 16pxs;
+        color: $color-claro;
+        height: 50px;
+        padding: 0px 20px;
+        width: 70%;
+        outline: none;
+    }
+    ::placeholder{
+        color: $color-claro;
+    }
+}
