@@ -1,0 +1,16 @@
+//VARIABLES
+-var titulo = "Platzi Video"
+
+-var iconplay = "https://img.icons8.com/ios-glyphs/30/000000/play--v1.png"
+-var iconplus = "https://img.icons8.com/android/24/000000/plus.png"
+//MIXINS
+
+mixin carrousel(imagen,tituloVideo,subtituloVideo)  
+    div.carrousel-item 
+        img.carrousel-item__img(src=imagen)
+        div.carrousel-item__details
+            div 
+                img(src="https://img.icons8.com/ios-glyphs/30/000000/play--v1.png", alt="", srcset="")
+                img(src="https://img.icons8.com/android/24/000000/plus.png")
+        p.carrousel-item__details--title= tituloVideo
+        p.carrousel-item__details--subtitle= subtituloVideo 
