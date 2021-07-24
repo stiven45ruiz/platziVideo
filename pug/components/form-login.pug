@@ -1,9 +1,9 @@
 section.login 
                 section.login__container 
-                    h2 Inicia sesion 
+                    h2(tabindex="0") Inicia sesion 
                     form.login__container-form(action="")
-                        input.input(type="text" placeholder="Correo")
-                        input.input(type="password" placeholder="Contraseña") 
+                        input.input(aria-label="Correo" type="text" placeholder="Correo")
+                        input.input(aria-label="Contraseña" type="password" placeholder="Contraseña") 
                         button.button Iniciar sesion 
                         .login__container-remember-me 
                             label
